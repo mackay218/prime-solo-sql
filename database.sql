@@ -40,3 +40,4 @@ INSERT INTO accounts (username, city, transactions_completed, transactions_attem
   --find users before deleting them
 SELECT * FROM "accounts" WHERE ("city" = 'miami' OR "city" = 'phoenix') AND "transactions_completed" < 5;  
   
+DELETE * FROM "accounts" WHERE ("city" = 'miami' OR "city" = 'phoenix') AND "transactions_completed" < 5; 
